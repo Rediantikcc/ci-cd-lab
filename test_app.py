@@ -12,4 +12,3 @@ def test_not_found():
     client = app.test_client()
     response = client.get("/unknown")
     assert response.status_code == 404
-    
